@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #DECDCD;
+    height: auto;
+}
+
+.header {
+    display: flex;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    margin-left: 15.5rem;
+    font-size: medium;
+    font-weight: bolder;
+    height: auto;
+}
+
+#loghaut,
+#bf {
+    width: 11em;
+    height: 4em;
+}
+
+.programme {
+    width: 40em;
+    height: 3em;
+    background-color: white;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.groupliennav{
+    display: flex;
+    gap: 5rem;
+}
+.elemenlistnav{
+    list-style: none;
+}
+.liennav {
+    text-decoration: none;
+    display: flex;
+    gap: 5rem;
+    color: black;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.section2 {
+    display: flex;
+    background-color: #d6d9dc;
+    height: auto;
+    width:60rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 15rem;
+    margin-bottom: 2rem;
+    border-radius: 5rem;
+}
+.text_section2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3 {
+    display: flex;
+    background-color: #0de0e8;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+input{
+    width:10rem;
+    border-radius: 2rem;
+    border-color: red;
+}
+button{background-color: white;
+    width:10rem;
+    border-radius: 2rem;
+    border-color: whitesmoke;
+    font-weight: bold;
+}
+
+.form{
+    display: inline-flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-decoration: none;
+}
+.form::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+}
+
+footer{display: flex;
+flex-direction: column;
+background-color: #CED0D6;}
+
+.fone{
+    display: flex;
+flex-direction: row;
+}
+
+.fwo{font-weight: bold;
+margin-left: 5rem;
+margin-top: 2rem;}
+.foot1{width:40%;}
+.logofoot{
+    width:5rem;
+    margin-top: 1rem;
+}
+.foot2{width:10%;
+}
+
+.foot3{width:30%;}
+.icone{
+    width:3rem;
+    height:3rem
+}
