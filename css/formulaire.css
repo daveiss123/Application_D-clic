@@ -97,7 +97,8 @@ input{
 }
 button{background-color: white;
     width:10rem;
-    border-radius: 2rem;
+    height: 1.5rem;
+    border-radius: 1rem;
     border-color: whitesmoke;
     font-weight: bold;
 }

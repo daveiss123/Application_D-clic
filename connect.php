@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$dbname = 'pdo';
+$dbname = 'application_dclic';
 $username = 'root';
 $password = '';
 
