@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
     <title>Formulaire d'inscription</title>
 </head>
+
 <body>
     <header>
         <section class="header">
@@ -42,7 +43,7 @@
 <section class="section3">
    <p class="form"> Formulaire d'inscription</p>
 
-   <form action="">
+   <form action="traitement.php" method="post">
     <input type="text" placeholder="Nom" name="nom" required > <br><br>
     <input type="text" placeholder="Prenom" name="prenom" required > <br><br>
     <input type="date" placeholder="Date de naissance" name="birthday" required > <br><br>
@@ -71,3 +72,5 @@
 </section>
 </footer>
 </html>
+
+/*
