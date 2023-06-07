@@ -51,8 +51,8 @@ $databaseRows = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <td><?= $row['formation'] ?></td>
       <td>
         <button type="button">Add</button>
-        <button type="button">Delete 2</button>
-        <button type="button">Edit 3</button>
+        <button type="button">Delete </button>
+        <button type="button">Edit </button>
       </td>
     </tr>
   <?php endforeach; ?>
