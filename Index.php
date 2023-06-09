@@ -20,7 +20,7 @@
 <nav>
     <ul class="groupliennav" >
         <li class="elemenlistnav"> <a class="liennav" href="Index.html">INSCRIPTION</a> </li>
-    <li class="elemenlistnav" > <a class="liennav"  href="pages/liste.html">LISTE</a> </li>
+    <li class="elemenlistnav" > <a class="liennav"  href="pages/liste.php">LISTE</a> </li>
 </ul>
 </nav>
     
@@ -52,6 +52,8 @@
     <button type="submit">ENREGISTRER</button>
    </form>
 </section>
+
+
    
 </body>
 
@@ -72,5 +74,3 @@
 </section>
 </footer>
 </html>
-
-/*
