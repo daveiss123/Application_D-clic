@@ -41,10 +41,11 @@ $databaseRows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     th, td {
       border: 1px solid black;
       padding: 8px;
+      background-color: aqua;
     }
 
     th {
-      background-color: #f2f2f2;
+      background-color: #f3f3f3;
     }
   </style>
   
