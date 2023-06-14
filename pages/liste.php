@@ -11,7 +11,7 @@
 <body>
 <a href="pages/search.php"> <img src="Images/icones/icons8-chercher.svg" alt=""> </a>
     <?php
-// Connexion à la base de données (remplacez les valeurs par vos propres informations de connexion)
+// Connexion à la base de données
 $host = 'localhost';
 $dbname = 'application_dclic';
 $username = 'root';
