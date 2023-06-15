@@ -53,7 +53,6 @@
    </form>
 </section>
 
-
    
 </body>
 
@@ -73,4 +72,6 @@
 <a href="https://linkin.com/">  <img src="Images/icones/icons8-linkedin.svg" class="icone"></a>
 </section>
 </footer>
+
+
 </html>

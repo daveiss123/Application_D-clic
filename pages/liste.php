@@ -72,7 +72,8 @@ $databaseRows = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <td>
       <button type="button" onclick="addButtonClick()">Add</button>
           <button type="button" onclick="deleteButtonClick(<?= $row['id'] ?>)">Delete</button>
-          <button type="button" onclick="editButtonClick(<?= $row['id'] ?>)">Edit</button>
+          <button type="button" onclick="editButtonClick(<?= $row['id'] ?>, '<?= $row['nom'] ?>', '<?= $row['prenom'] ?>', '<?= $row['birthday'] ?>', '<?= $row['ville'] ?>', '<?= $row['formation'] ?>')">Edit</button>
+
       </td>
     </tr>
   <?php endforeach; ?>
@@ -94,13 +95,15 @@ $pdo = null;
       // Code à exécuter lorsque le bouton "Delete" est cliqué
       if (confirm("Êtes-vous sûr de vouloir supprimer cet apprenant ?")) {
         // Rediriger vers une page de suppression d'apprenant
-        window.location.href = "suppression_apprenant.php?id=" + id;
+        window.location.href = "suppression.php?id=" + id;
       }
     }
 
     function editButtonClick(id, nom, prenom, birthday, ville, formation) {
-  // Rediriger vers la page d'édition avec les valeurs actuelles de l'apprenant
+  // Rediriger vers la page d'index avec les valeurs actuelles de l'apprenant pour la modification
   window.location.href = "index.php?action=edit&id=" + id + "&nom=" + encodeURIComponent(nom) + "&prenom=" + encodeURIComponent(prenom) + "&birthday=" + encodeURIComponent(birthday) + "&ville=" + encodeURIComponent(ville) + "&formation=" + encodeURIComponent(formation);
+}
+
 }
 <?php
 // Vérifier si le paramètre "id" est passé dans l'URL
@@ -114,22 +117,7 @@ if (isset($_GET['id'])) {
     $username = 'root';
     $password = '';
 
-    try {
-        $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        // Préparer et exécuter la requête de suppression
-        $sql = "DELETE FROM apprenant WHERE id = :id";
-        $stmt = $pdo->prepare($sql);
-        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-        $stmt->execute();
-
-        // Rediriger vers une page de confirmation ou une autre page appropriée
-        header("Location: pages/liste.php");
-        exit();
-    } catch (PDOException $e) {
-        echo "Erreur : " . $e->getMessage();
-    }
+    
 }
 ?>
 
